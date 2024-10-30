@@ -287,14 +287,6 @@ public class PublicTools {
       if (setDefault) AppData.setting.setDefaultMaxSize(Integer.parseInt(str));
       else device.maxSize = Integer.parseInt(str);
     }).getRoot());
-    fatherLayout.addView(createSpinnerCard(context, context.getString(R.string.option_max_fps), context.getString(R.string.option_max_fps_detail), String.valueOf(setDefault ? AppData.setting.getDefaultMaxFps() : device.maxFps), maxFpsAdapter, str -> {
-      if (setDefault) AppData.setting.setDefaultMaxFps(Integer.parseInt(str));
-      else device.maxFps = Integer.parseInt(str);
-    }).getRoot());
-    fatherLayout.addView(createSpinnerCard(context, context.getString(R.string.option_max_video_bit), context.getString(R.string.option_max_video_bit_detail), String.valueOf(setDefault ? AppData.setting.getDefaultMaxVideoBit() : device.maxVideoBit), maxVideoBitAdapter, str -> {
-      if (setDefault) AppData.setting.setDefaultMaxVideoBit(Integer.parseInt(str));
-      else device.maxVideoBit = Integer.parseInt(str);
-    }).getRoot());
     if (device != null) {
       if (device.isNormalDevice())
         fatherLayout.addView(createSwitchCard(context, context.getString(R.string.option_startup_device), context.getString(R.string.option_startup_device_detail), device.connectOnStart, isChecked -> device.connectOnStart = isChecked).getRoot());
