@@ -271,8 +271,8 @@ public class PublicTools {
   }
 
   // 创建设备参数设置页面
-  private static final String[] maxFpsList = new String[]{"90", "60", "40", "30", "20", "10"};
-  private static final String[] maxVideoBitList = new String[]{"12", "8", "4", "2", "1"};
+  private static final String[] maxFpsList = new String[]{"120", "90", "60", "40", "30", "20", "10"};
+  private static final String[] maxVideoBitList = new String[]{"1000", "100", "12", "8", "4", "2", "1"};
 
   public static void createDeviceOptionSet(Context context, ViewGroup fatherLayout, Device device) {
     // Device为null，则视为设置默认参数
